@@ -1,0 +1,43 @@
+.toolbar { 
+	margin-bottom: 20px; 
+}
+
+button {
+	margin-right: 10px;
+	padding: 7px 16px;
+	font-size: 17px;
+	word-spacing: -3px;
+	color: #555555;
+	background-color: #fff;
+	border: 1px solid #555;
+	cursor: pointer;
+}
+
+button:hover {
+	color: #fff;
+	background-color: #3E3E3E;
+	transition: all 0.3s ease;
+}
+
+.toolbar .active {
+	color: #fff;
+	background-color: #555;
+	transform: translateY(-5px);
+}
+
+@media (max-width: 480px) {
+	.toolbar {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	button {
+		width: 48.63%;
+		margin-bottom: 8px;
+	}
+}
+
+@media (max-width: 397px) {
+	button { width: 100%; }
+}
